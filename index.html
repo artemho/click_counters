@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Click Counter</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    var click = 0;
+
+      function onClick_up() {
+        click += 1;
+        document.getElementById("up").innerHTML = click;
+      };
+
+         function onClick() {
+            click -= 1;
+            document.getElementById("down").innerHTML = click;
+          };
+    </script>
+    
+    <button type="button" onClick="onClick_up()">Click UP</button>
+    <p>Clicks UP: <a id="up">0</a></p>
+  
+
+    <button type="button" onClick="onClick()">Click Down</button>
+    <p>Clicks Down: <a id="down">0</a></p>
+
+
+</body></html>
